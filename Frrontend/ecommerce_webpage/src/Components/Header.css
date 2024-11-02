@@ -1,0 +1,80 @@
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
+  
+  /* Logo styles */
+  .logo-container {
+    flex: 1; /* Take as much space as available */
+  }
+  
+  .logo {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Navigation links styles */
+  .links-container {
+    display: flex;
+  }
+  
+  .links-container a,
+  .links-container button {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 10px 15px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  .links-container a:hover,
+  .links-container button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Add a light background on hover */
+  }
+  
+  .links-container button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .links-container button:focus {
+    outline: none;
+  }
+  
+
+  #logout-button {
+    background-color: #dc3545; /* Danger color */
+  }
+  
+  #logout-button:hover {
+    background-color: #c82333; /* Lighter shade of red */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .header {
+      padding: 10px;
+    }
+    
+    .logo {
+      font-size: 20px;
+    }
+    
+    .links-container a,
+    .links-container button {
+      padding: 8px 12px;
+    }
+  }
+  
